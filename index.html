@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GARTECH Ingeniería SPA</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0b1220;
+      color:white;
+    }
+
+    header{
+      background:#07101d;
+      padding:20px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid #13304d;
+    }
+
+    .logo{
+      font-size:30px;
+      font-weight:bold;
+      color:#1e90ff;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#1e90ff;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+      padding:20px;
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+      url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero h1{
+      font-size:65px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      max-width:800px;
+      font-size:22px;
+      color:#d0d0d0;
+      line-height:1.6;
+    }
+
+    .btn{
+      margin-top:35px;
+      background:#1e90ff;
+      color:white;
+      padding:15px 35px;
+      border:none;
+      border-radius:8px;
+      font-size:18px;
+      cursor:pointer;
+      transition:0.3s;
+      text-decoration:none;
+    }
+
+    .btn:hover{
+      background:#0066cc;
+    }
+
+    .services{
+      padding:80px 50px;
+      background:#101b2d;
+    }
+
+    .services h2{
+      text-align:center;
+      font-size:42px;
+      margin-bottom:50px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#162338;
+      padding:30px;
+      border-radius:15px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      background:#1d2d47;
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#1e90ff;
+    }
+
+    footer{
+      padding:40px;
+      text-align:center;
+      background:#07101d;
+      border-top:1px solid #13304d;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">GARTECH</div>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Proyectos</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <h1>GARTECH Ingeniería SPA</h1>
+
+  <p>
+    Tecnología que protege. Ingeniería que conecta.
+    Especialistas en seguridad electrónica, redes,
+    automatización, CCTV, electricidad,
+    climatización y control de acceso.
+  </p>
+
+  <a class="btn" href="mailto:alan@gartech.cl">
+    Solicitar Cotización
+  </a>
+
+</section>
+
+<section class="services">
+
+  <h2>Nuestros Servicios</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>CCTV</h3>
+      <p>
+        Implementación profesional de sistemas de videovigilancia IP y análoga.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Control de Acceso</h3>
+      <p>
+        Soluciones seguras con lectores biométricos, tarjetas y torniquetes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Redes y Cableado</h3>
+      <p>
+        Diseño e instalación de infraestructura de red certificada.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Electricidad</h3>
+      <p>
+        Proyectos eléctricos, tableros y soluciones energéticas.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Climatización</h3>
+      <p>
+        Instalación y mantención de sistemas de aire acondicionado y fan coil.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Automatización</h3>
+      <p>
+        Integración tecnológica para empresas y edificios inteligentes.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <h3>GARTECH Ingeniería SPA</h3>
+
+  <br>
+
+  <p>
+    📧 alan@gartech.cl
+  </p>
+
+  <p>
+    📱 +56 9 3518 0150
+  </p>
+
+  <p>
+    🌎 www.gartech.cl
+  </p>
+
+</footer>
+
+</body>
+</html>
