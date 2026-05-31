@@ -128,7 +128,44 @@
       background:#07101d;
       border-top:1px solid #13304d;
     }
+.contact-form{
+    max-width:600px;
+    margin:30px auto 0;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
 
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#1b1f2a;
+    color:white;
+    font-size:16px;
+}
+
+.contact-form textarea{
+    min-height:140px;
+    resize:none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color:#bfc7d5;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    outline:2px solid #1e90ff;
+}
+
+.contact-form button{
+    border:none;
+    cursor:pointer;
+}
   </style>
 
 </head>
@@ -159,9 +196,23 @@
     climatización y control de acceso.
   </p>
 
-  <a class="btn" href="mailto:alan@gartech.cl">
-    Solicitar Cotización
-  </a>
+  <form action="https://formspree.io/f/mojbzkpg" method="POST" class="contact-form">
+
+    <input type="text" name="nombre" placeholder="Nombre Completo" required>
+
+    <input type="text" name="rut" placeholder="RUT" required>
+
+    <input type="tel" name="telefono" placeholder="Teléfono" required>
+
+    <input type="email" name="email" placeholder="Correo Electrónico" required>
+
+    <textarea name="mensaje" placeholder="Describe el servicio que necesitas..." required></textarea>
+
+    <button type="submit" class="btn">
+        Solicitar Cotización
+    </button>
+
+</form>
 
 </section>
 
@@ -224,7 +275,7 @@
   <br>
 
   <p>
-    📧 alan@gartech.cl
+    📧 <a href="mailto:contacto@gartech.cl">contacto@gartech.cl</a>
   </p>
 
   <p>
