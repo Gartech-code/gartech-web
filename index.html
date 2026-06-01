@@ -244,6 +244,54 @@
     color:#d1d5db;
     line-height:1.7;
 }
+.process{
+    padding:80px 40px;
+    background:#101b2d;
+    text-align:center;
+}
+
+.process h2{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.process-step{
+    background:#162338;
+    padding:35px;
+    border-radius:15px;
+    border:1px solid #223a5e;
+}
+
+.process-step span{
+    display:inline-flex;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#1e90ff;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.process-step h3{
+    color:#1e90ff;
+    margin-bottom:15px;
+}
+
+.process-step p{
+    color:#d1d5db;
+    line-height:1.7;
+} 
   </style>
 
 </head>
@@ -300,7 +348,39 @@
 <section class="why-us">
 
     <h2>¿Por qué elegir GARTECH?</h2>
+<section class="process">
 
+    <h2>Cómo trabajamos</h2>
+
+    <div class="process-grid">
+
+        <div class="process-step">
+            <span>1</span>
+            <h3>Levantamiento técnico</h3>
+            <p>Revisamos el requerimiento, condiciones del lugar, riesgos, necesidades y objetivos del cliente.</p>
+        </div>
+
+        <div class="process-step">
+            <span>2</span>
+            <h3>Propuesta y cotización</h3>
+            <p>Preparamos una solución clara, con alcances definidos, materiales, tiempos y recomendaciones técnicas.</p>
+        </div>
+
+        <div class="process-step">
+            <span>3</span>
+            <h3>Ejecución del proyecto</h3>
+            <p>Realizamos instalación, configuración, pruebas, puesta en marcha y soporte en terreno.</p>
+        </div>
+
+        <div class="process-step">
+            <span>4</span>
+            <h3>Entrega y soporte</h3>
+            <p>Entregamos el trabajo terminado, recomendaciones de uso y acompañamiento posterior al cliente.</p>
+        </div>
+
+    </div>
+
+</section>
     <div class="why-grid">
 
         <div class="why-card">
