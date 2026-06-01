@@ -175,6 +175,29 @@
 .contact-info a:hover{
     color:#1e90ff;
 }
+.whatsapp-float{
+    position:fixed;
+    width:65px;
+    height:65px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+    z-index:999;
+    transition:0.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+    background:#1ebe5d;
+}
   </style>
 
 </head>
@@ -297,5 +320,8 @@
 
 </footer>
 
+<a href="https://wa.me/56935180150" class="whatsapp-float" target="_blank">
+    💬
+</a>
 </body>
 </html>
