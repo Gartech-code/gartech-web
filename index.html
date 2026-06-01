@@ -202,6 +202,48 @@
     width:38px;
     height:38px;
 }
+.why-us{
+    padding:80px 40px;
+    background:#07101d;
+    text-align:center;
+}
+
+.why-us h2{
+    font-size:42px;
+    margin-bottom:50px;
+    color:white;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.why-card{
+    background:#111827;
+    padding:35px;
+    border-radius:15px;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.why-card:hover{
+    transform:translateY(-8px);
+}
+
+.why-card h3{
+    color:#1e90ff;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.why-card p{
+    color:#d1d5db;
+    line-height:1.7;
+}
   </style>
 
 </head>
@@ -255,7 +297,35 @@
 <section class="services">
 
   <h2>Nuestros Servicios</h2>
+<section class="why-us">
 
+    <h2>¿Por qué elegir GARTECH?</h2>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <h3>⚡ Respuesta Rápida</h3>
+            <p>Atención eficiente y soluciones técnicas oportunas para empresas y clientes.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>🛡️ Soluciones Profesionales</h3>
+            <p>Implementamos tecnología confiable en seguridad electrónica, redes y automatización.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>🔧 Soporte Técnico</h3>
+            <p>Acompañamiento técnico antes, durante y después de cada proyecto.</p>
+        </div>
+
+        <div class="why-card">
+            <h3>🏢 Experiencia Multidisciplinaria</h3>
+            <p>Integración de CCTV, electricidad, climatización, control de acceso y redes.</p>
+        </div>
+
+    </div>
+
+</section>
   <div class="grid">
 
     <div class="card">
