@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GARTECH Ingeniería SPA</title>
-
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GARTECH Ingeniería SPA</title>
+<style>
 
     *{
       margin:0;
@@ -294,190 +294,29 @@
     color:#d1d5db;
     line-height:1.7;
 } 
-  </style>
+  
+/* GARTECH: catálogo preparado para incorporar productos de proveedores */
+html{scroll-behavior:smooth}header{position:sticky;top:0;z-index:100;gap:20px;flex-wrap:wrap}nav{display:flex;flex-wrap:wrap;gap:15px}nav a{margin-left:0}section{scroll-margin-top:110px}
+.shop{padding:75px max(20px,5vw);background:#0d192b}.shop h2,.quote h2{font-size:clamp(28px,4vw,42px);text-align:center;margin-bottom:14px}.section-lead{color:#c5d3e4;max-width:850px;margin:0 auto 30px;text-align:center;line-height:1.65}.shop-cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:1200px;margin:25px auto}.shop-cat{background:#172941;border:1px solid #294769;border-radius:15px;padding:24px;text-align:left;color:white;cursor:pointer;transition:.2s}.shop-cat:hover,.shop-cat.active{border-color:#55aeff;background:#203956}.shop-cat .emoji{font-size:35px;display:block;margin-bottom:14px}.shop-cat strong{font-size:19px;display:block;margin-bottom:10px}.shop-cat small{color:#bfcfe0;line-height:1.5;display:block}.catalog-toolbar{max-width:1200px;margin:30px auto 18px;display:flex;flex-wrap:wrap;gap:12px}.catalog-toolbar input,.catalog-toolbar select,.quote input,.quote select,.quote textarea{background:#17283e;border:1px solid #385270;color:#fff;border-radius:9px;padding:13px;font:inherit;min-width:0}.catalog-toolbar input{flex:1;min-width:180px}.catalog-toolbar select{min-width:200px}.product-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}.product{background:#16263c;border:1px solid #30445f;border-radius:14px;overflow:hidden}.product-visual{height:155px;display:flex;align-items:center;justify-content:center;background:linear-gradient(130deg,#1c3552,#101a2a);font-size:55px}.product-body{padding:20px}.product-body h3{margin:0 0 10px;font-size:19px}.product-body p{color:#c2d0df;font-size:14px;line-height:1.55;margin:0 0 14px}.pending{display:inline-block;color:#a9d6ff;font-size:13px;font-weight:bold}.product-body button,.quote button{margin-top:15px;background:#1686ed;color:white;border:0;border-radius:9px;padding:12px 17px;cursor:pointer;font-weight:bold}.quote{padding:75px 20px;background:#101b2d}.quote-inner{max-width:800px;margin:auto}.quote form{display:grid;gap:15px}.quote .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.quote label{display:grid;gap:7px;color:#dce9f7;font-size:14px}.quote textarea{min-height:125px;resize:vertical}.quote-actions{display:flex;gap:12px;flex-wrap:wrap}.quote-actions button{margin-top:0}.quote-actions button.secondary{background:#244361}.shop-note{font-size:13px;color:#aebed0;line-height:1.6;margin-top:18px}.trust{padding:60px 20px;text-align:center;background:#091626}.trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;max-width:900px;margin:25px auto}.trust article{background:#17283c;border-radius:12px;padding:25px}.trust article p{font-size:14px;color:#b8c9db;line-height:1.6;margin-top:12px}@media(max-width:650px){header{padding:16px 20px}nav{gap:12px}nav a{font-size:14px}.hero{min-height:65vh;padding:75px 20px}.hero p{font-size:17px}.quote .fields{grid-template-columns:1fr}.services,.why-us,.process{padding:60px 20px}}
 
+
+.product[hidden]{display:none!important}
+ .gartech-footer{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:24px;text-align:center}.footer-address{text-align:left;color:#d1deee;line-height:1.7}.footer-address strong{color:white}.footer-contact{grid-column:2 / 4}@media(max-width:650px){.gartech-footer{grid-template-columns:1fr;text-align:left;padding:30px 20px}.footer-contact{grid-column:auto;text-align:left}}
+</style>
 </head>
-
 <body>
+<header><div class="logo">GARTECH</div><nav aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="catalogo.html">Catálogo</a><a href="#servicios">Servicios</a><a href="#cotizacion">Cotizar</a></nav></header>
+<main>
+<section class="hero" id="inicio"><h1>GARTECH Ingeniería SpA</h1><p>Tecnología que protege. Ingeniería que conecta.<br/>Equipos, instalación y soporte profesional en videovigilancia, climatización y electricidad.</p><a class="btn" href="catalogo.html">Explorar catálogo</a></section>
 
-<header>
-
-  <div class="logo">GARTECH</div>
-
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Servicios</a>
-    <a href="#">Proyectos</a>
-    <a href="#">Contacto</a>
-  </nav>
-
-</header>
-
-<section class="hero">
-
-  <h1>GARTECH Ingeniería SPA</h1>
-
-  <p>
-    Tecnología que protege. Ingeniería que conecta.
-    Especialistas en seguridad electrónica, redes,
-    automatización, CCTV, electricidad,
-    climatización y control de acceso.
-  </p>
-
-  <form action="https://formspree.io/f/mojbzkpg" method="POST" class="contact-form">
-
-    <input type="text" name="nombre" placeholder="Nombre Completo" required>
-
-    <input type="text" name="rut" placeholder="RUT" required>
-
-    <input type="tel" name="telefono" placeholder="Teléfono" required>
-
-    <input type="email" name="email" placeholder="Correo Electrónico" required>
-
-    <textarea name="mensaje" placeholder="Describe el servicio que necesitas..." required></textarea>
-
-    <button type="submit" class="btn">
-        Solicitar Cotización
-    </button>
-
-</form>
-
-</section>
-
-<section class="services">
-
-  <h2>Nuestros Servicios</h2>
-
-   
-  <div class="grid">
-
-    <div class="card">
-      <h3>CCTV</h3>
-      <p>
-        Implementación profesional de sistemas de videovigilancia IP y análoga.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Control de Acceso</h3>
-      <p>
-        Soluciones seguras con lectores biométricos, tarjetas y torniquetes.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Redes y Cableado</h3>
-      <p>
-        Diseño e instalación de infraestructura de red certificada.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Electricidad</h3>
-      <p>
-        Proyectos eléctricos, tableros y soluciones energéticas.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Climatización</h3>
-      <p>
-        Instalación y mantención de sistemas de aire acondicionado y fan coil.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Automatización</h3>
-      <p>
-        Integración tecnológica para empresas y edificios inteligentes.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-<section class="why-us">
-
-    <h2>¿Por qué elegir GARTECH?</h2>
-<section class="process">
- <div class="why-grid">
-
-        <div class="why-card">
-            <h3>⚡ Respuesta Rápida</h3>
-            <p>Atención eficiente y soluciones técnicas oportunas para empresas y clientes.</p>
-        </div>
-
-        <div class="why-card">
-            <h3>🛡️ Soluciones Profesionales</h3>
-            <p>Implementamos tecnología confiable en seguridad electrónica, redes y automatización.</p>
-        </div>
-
-        <div class="why-card">
-            <h3>🔧 Soporte Técnico</h3>
-            <p>Acompañamiento técnico antes, durante y después de cada proyecto.</p>
-        </div>
-
-        <div class="why-card">
-            <h3>🏢 Experiencia Multidisciplinaria</h3>
-            <p>Integración de CCTV, electricidad, climatización, control de acceso y redes.</p>
-        </div>
-
-    </div>
-
-</section>
-    <h2>Cómo trabajamos</h2>
-
-    <div class="process-grid">
-
-        <div class="process-step">
-            <span>1</span>
-            <h3>Levantamiento técnico</h3>
-            <p>Revisamos el requerimiento, condiciones del lugar, riesgos, necesidades y objetivos del cliente.</p>
-        </div>
-
-        <div class="process-step">
-            <span>2</span>
-            <h3>Propuesta y cotización</h3>
-            <p>Preparamos una solución clara, con alcances definidos, materiales, tiempos y recomendaciones técnicas.</p>
-        </div>
-
-        <div class="process-step">
-            <span>3</span>
-            <h3>Ejecución del proyecto</h3>
-            <p>Realizamos instalación, configuración, pruebas, puesta en marcha y soporte en terreno.</p>
-        </div>
-
-        <div class="process-step">
-            <span>4</span>
-            <h3>Entrega y soporte</h3>
-            <p>Entregamos el trabajo terminado, recomendaciones de uso y acompañamiento posterior al cliente.</p>
-        </div>
-
-    </div>
-
-</section>
-<footer>
-
-  <h3>GARTECH Ingeniería SPA</h3>
-
-  <br>
-
-  <p>
-    📧 <a href="mailto:contacto@gartech.cl" style="color:white; text-decoration:none; font-weight:bold;">contacto@gartech.cl</a>
-  </p>
-
-  <p>
-    📱 +56 9 3518 0150
-  </p>
-
-  <p>
-    🌎 www.gartech.cl
-  </p>
-
-</footer>
-
-<a href="https://wa.me/56935180150" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-</a>
-</body>
-</html>
+<section class="services" id="servicios"><h2>Nuestros servicios</h2><div class="grid"><div class="card"><h3>Videovigilancia</h3><p>Instalación, configuración y puesta en marcha de sistemas CCTV.</p></div><div class="card"><h3>Climatización</h3><p>Instalación y mantenimiento de aire acondicionado.</p></div><div class="card"><h3>Electricidad</h3><p>Instalaciones, tableros y mantenimiento eléctrico.</p></div><div class="card"><h3>Redes y control de acceso</h3><p>Soluciones de conectividad y seguridad electrónica.</p></div></div></section>
+<section class="quote" id="cotizacion"><div class="quote-inner"><h2>Solicitar cotización o compra</h2><p class="section-lead">Puedes solicitar solo el equipo, solo la instalación o ambos. Pago al recibir el producto o al finalizar el servicio, sujeto a confirmación del pedido y condiciones acordadas.</p>
+<form action="https://formspree.io/f/mojbzkpg" id="cotizar" method="POST"><div class="fields"><label>Nombre o empresa<input autocomplete="name" name="nombre" required=""/></label><label>Correo electrónico<input autocomplete="email" name="email" required="" type="email"/></label><label>Teléfono<input autocomplete="tel" name="telefono" required="" type="tel"/></label><label>Ciudad<input name="ubicacion" required=""/></label></div><div class="fields"><label>Categoría<select id="categoria" name="categoria"><option>Videovigilancia</option><option>Aire acondicionado</option><option>Electricidad</option><option>Redes</option><option>Control de acceso</option><option>Otro servicio</option></select></label><label>Necesito<select id="modalidad" name="modalidad"><option>Comprar producto</option><option>Solicitar instalación</option><option>Producto e instalación</option></select></label></div><label>Producto, cantidad y detalles<textarea id="detalle" name="mensaje" placeholder="Indica qué necesitas, cantidades y cualquier detalle relevante." required=""></textarea></label><div class="quote-actions"><button type="submit">Enviar formulario</button><button class="secondary" id="whatsappQuote" type="button">Enviar por WhatsApp</button></div><p class="shop-note">Enviar este formulario no constituye una compra confirmada. GARTECH verificará disponibilidad, precio y condiciones de entrega o instalación. No se solicita pago en línea.</p></form></div></section>
+</main><footer class="gartech-footer"><div class="footer-address"><strong>Domicilio comercial</strong><p>Av. Presidente Kennedy 7440, Oficina 701<br/>Vitacura, Región Metropolitana, Chile</p></div><div class="footer-contact"><h3>GARTECH Ingeniería SpA</h3><p style="margin-top:12px"><a href="mailto:contacto@gartech.cl" style="color:white">contacto@gartech.cl</a> · +56 9 4102 9070</p><p style="margin-top:8px">www.gartech.cl</p></div></footer>
+<a aria-label="Contactar GARTECH por WhatsApp" class="whatsapp-float" href="https://wa.me/56941029070" rel="noopener noreferrer" target="_blank"><img alt="WhatsApp" src="https://cdn-icons-png.flaticon.com/512/733/733585.png"/></a>
+<script>
+const params=new URLSearchParams(window.location.search);
+if(params.has('categoria')){const sel=document.getElementById('categoria');if(sel){const value=params.get('categoria');if([...sel.options].some(o=>o.value===value||o.text===value))sel.value=value;}}
+if(params.has('detalle')){const d=document.getElementById('detalle');if(d)d.value=params.get('detalle');}
+document.getElementById('whatsappQuote').addEventListener('click',()=>{const form=document.getElementById('cotizar');if(!form.reportValidity())return;const data=new FormData(form);const msg='Hola GARTECH, solicito cotización.\n'+Array.from(data.entries()).map(([k,v])=>k+': '+v).join('\n');window.open('https://wa.me/56941029070?text='+encodeURIComponent(msg),'_blank','noopener,noreferrer')});
+</script></body></html>
